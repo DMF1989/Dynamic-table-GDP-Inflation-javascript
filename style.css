@@ -1,0 +1,278 @@
+body {
+    display: grid;
+    justify-items: center;
+}
+
+div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: max-content;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+th {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #E7E6A3
+}
+
+[rowspan] {
+    border: solid 1px
+}
+
+td {
+    border-right: solid 1px;
+}
+
+td:has(input[type=number]) {
+    text-align: center;
+}
+
+div:nth-child(3)>button {
+    width: 10%
+}
+
+table,
+th {
+    border: 1px solid black;
+}
+
+input {
+    border-style: none;
+}
+
+th input[type=text] {
+    text-align: center;
+}
+
+td input[type=text] {
+    text-align: left;
+}
+
+input[type=number] {
+    text-align: center;
+}
+
+th>input[type=text] {
+    background-color: #E7E6A3;
+}
+
+.category>input[type=text] {
+    text-align: left;
+    font-size: 1.7ch;
+}
+
+#root>div>div:nth-of-type(3) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+#root>div>div:nth-of-type(4) {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+@media (max-width: 1400px) {
+    #root>div>div:nth-of-type(4) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#root>div>div:nth-of-type(3)>button {
+    margin-top: 20px;
+    display: block
+}
+
+div:nth-of-type(2) {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 25px;
+    grid-auto-flow: dense;
+    width: min-content;
+}
+
+h3 {
+    margin-bottom: 10px;
+    align-self: end;
+    text-align: center;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: max-content;
+}
+
+h3:nth-of-type(1)~p {
+    grid-column: 1;
+}
+
+h3:nth-of-type(2)~p {
+    grid-column: 2
+}
+
+h3:nth-of-type(3)~p {
+    grid-column: 3
+}
+
+h3:nth-of-type(4)~p {
+    grid-column: 4
+}
+
+h3:nth-of-type(5)~p {
+    grid-column: 5
+}
+
+h3:nth-of-type(6)~p {
+    grid-column: 6;
+}
+
+h3:nth-of-type(6)~p:last-of-type {
+    width: 100%;
+    text-align: right;
+}
+
+div:nth-of-type(3)>button:nth-of-type(1) {
+    color: lightseagreen
+}
+
+div:nth-of-type(3)>button:nth-of-type(2) {
+    color: dodgerblue
+}
+
+div>div:nth-child(2) {
+    display: inline-grid;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 22px;
+}
+
+div>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+div>div:nth-child(4) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+
+button {
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    color: #39739d;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 0.15385;
+    margin: 0;
+    padding: 8px .4em;
+    vertical-align: baseline;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+button:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+#PlotPIB, #PlotGrowth {
+    width:100%;
+    max-width:1000px;
+    max-height:400px
+}
+
+.sf-hidden {
+    display: none
+}
+
+.checkbox-wrapper-49 {
+    --size: 80px;
+}
+
+.checkbox-wrapper-49 .block {
+    position: relative;
+    clear: both;
+    float: left
+}
+
+.checkbox-wrapper-49 label {
+    width: var(--size);
+    height: calc(var(--size)/2);
+    box-sizing: border-box;
+    border: 3px solid;
+    float: left;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease;
+    color: black
+}
+
+.checkbox-wrapper-49 input[type=checkbox]+label {
+    background: rgba(32,178,170,0.6)
+}
+
+.checkbox-wrapper-49 input[type=checkbox]:checked+label {
+    background: rgba(0,0,255,0.6)
+}
+
+.checkbox-wrapper-49 input[type=checkbox]:checked+label:before {
+    left: calc(var(--size)/2)
+}
+
+.checkbox-wrapper-49 label:before {
+    transition: .3s ease;
+    content: "";
+    width: calc((var(--size)/2) - 10px);
+    height: calc((var(--size)/2) - 10px);
+    position: absolute;
+    background: white;
+    left: 2px;
+    top: 2px;
+    box-sizing: border-box;
+    border: 3px solid;
+    color: black;
+    border-radius: 100px
+}
+
+/* #data-table tr:nth-of-type(3n-1) > td:nth-of-type(n+2) > input {
+  color: lightseagreen  
+}
+
+#data-table tr:nth-of-type(3n) > td > input {
+  color:  dodgerblue
+} */
